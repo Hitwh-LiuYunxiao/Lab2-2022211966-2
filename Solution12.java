@@ -1,3 +1,5 @@
+package com.example.lab2codes;
+
 import java.util.*;
 /*
  * @Description:
@@ -17,7 +19,13 @@ import java.util.*;
 
 class Solution {
     public String multiply(String num1, String num2) {
-        if (num1.equals("0") | num2.equals("0")) {
+        /**
+         * revised by 2022211962-LiXinrui
+         * in juging condition of if():
+         *  num1.equals("0") | num2.equals("0")
+         *  -> num1.equals("0") || num2.equals("0")
+         */
+        if (num1.equals("0") || num2.equals("0")) {
             return "0";
         }
         String ans = "0";
